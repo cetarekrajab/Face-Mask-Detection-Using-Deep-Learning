@@ -45,11 +45,11 @@ The final model achieved an accuracy of 98.9% after improving the training data 
 
 ## Training Data Sources
 
-```text id="m5q2vl"
+```text id="g8v2wp"
 https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
 ```
 
-```text id="u8r1xp"
+```text id="m4x7ql"
 https://www.kaggle.com/datasets/adsawe/face-data-for-mask-classification/data
 ```
 
@@ -57,7 +57,7 @@ https://www.kaggle.com/datasets/adsawe/face-data-for-mask-classification/data
 
 ## Project Structure
 
-```bash id="k4v9tm"
+```bash id="t6k1zr"
 Face-Mask-Detection-Using-Deep-Learning/
 │
 ├── README.md
@@ -74,6 +74,9 @@ Face-Mask-Detection-Using-Deep-Learning/
 │   ├── mobilenetv2_model.h5
 │   └── improved_model.h5
 │
+├── report/
+│   └── Face_Mask_Detection_Report.pdf
+│
 └── screenshots/
 ```
 
@@ -85,7 +88,7 @@ Face-Mask-Detection-Using-Deep-Learning/
 
 2. Install required libraries:
 
-```bash id="r2m7qw"
+```bash id="p9r3xm"
 pip install tensorflow opencv-python numpy matplotlib
 ```
 
@@ -93,7 +96,7 @@ pip install tensorflow opencv-python numpy matplotlib
 
 4. Run the camera detection system:
 
-```bash id="v6x1kp"
+```bash id="u2w8kn"
 python app.py
 ```
 
