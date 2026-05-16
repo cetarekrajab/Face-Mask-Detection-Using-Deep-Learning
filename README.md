@@ -14,7 +14,6 @@ The final model achieved an accuracy of 98.9% after improving the training data 
 
 * Real-time face mask detection
 * Webcam integration using OpenCV
-* Face detection using Haar Cascade
 * Deep learning image classification
 * Transfer learning using MobileNetV2
 * Mask / No Mask classification
@@ -31,7 +30,6 @@ The final model achieved an accuracy of 98.9% after improving the training data 
 * OpenCV
 * NumPy
 * MobileNetV2
-* Haar Cascade Classifier
 
 ---
 
@@ -47,11 +45,11 @@ The final model achieved an accuracy of 98.9% after improving the training data 
 
 ## Training Data Sources
 
-```text id="k7m2pl"
+```text id="m5q2vl"
 https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
 ```
 
-```text id="u4x9qw"
+```text id="u8r1xp"
 https://www.kaggle.com/datasets/adsawe/face-data-for-mask-classification/data
 ```
 
@@ -59,7 +57,7 @@ https://www.kaggle.com/datasets/adsawe/face-data-for-mask-classification/data
 
 ## Project Structure
 
-```bash id="p8r1vn"
+```bash id="k4v9tm"
 Face-Mask-Detection-Using-Deep-Learning/
 │
 ├── README.md
@@ -67,17 +65,16 @@ Face-Mask-Detection-Using-Deep-Learning/
 ├── .gitignore
 │
 ├── app.py
-├── train_model.py
-├── detect_mask.py
-├── mask_detector.model
-├── haarcascade_frontalface_default.xml
-├── requirements.txt
+├── train1.py
+├── train2.py
+├── train3.py
 │
-├── static/
+├── models/
+│   ├── cnn_model.h5
+│   ├── mobilenetv2_model.h5
+│   └── improved_model.h5
 │
-├── screenshots/
-│
-└── models/
+└── screenshots/
 ```
 
 ---
@@ -88,16 +85,16 @@ Face-Mask-Detection-Using-Deep-Learning/
 
 2. Install required libraries:
 
-```bash id="m3v8kt"
+```bash id="r2m7qw"
 pip install tensorflow opencv-python numpy matplotlib
 ```
 
 3. Put all project files in the same folder.
 
-4. Run the detection system:
+4. Run the camera detection system:
 
-```bash id="t6q2wl"
-python detect_mask.py
+```bash id="v6x1kp"
+python app.py
 ```
 
 5. The webcam will open and start detecting:
