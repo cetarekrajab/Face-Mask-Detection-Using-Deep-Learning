@@ -6,7 +6,7 @@ This project is a real-time Face Mask Detection System developed using Deep Lear
 
 Initially, a CNN model was built from scratch, but the project was later improved using transfer learning with MobileNetV2, resulting in significantly better accuracy and real-time performance.
 
-The final model achieved an accuracy of 98.9% after improving the dataset with more real-world variations.
+The final model achieved an accuracy of 98.9% after improving the training data with more real-world variations.
 
 ---
 
@@ -19,7 +19,7 @@ The final model achieved an accuracy of 98.9% after improving the dataset with m
 * Transfer learning using MobileNetV2
 * Mask / No Mask classification
 * Real-time prediction display
-* Improved dataset handling for real-world scenarios
+* Improved real-world detection performance
 
 ---
 
@@ -37,44 +37,21 @@ The final model achieved an accuracy of 98.9% after improving the dataset with m
 
 ## Model Performance
 
-| Model                  | Accuracy |
-| ---------------------- | -------- |
-| CNN From Scratch       | 95%      |
-| MobileNetV2            | 98%      |
-| Improved Dataset Model | 98.9%    |
+| Model            | Accuracy |
+| ---------------- | -------- |
+| CNN From Scratch | 95%      |
+| MobileNetV2      | 98%      |
+| Improved Model   | 98.9%    |
 
 ---
 
-## Dataset
+## Training Data Sources
 
-Two Kaggle datasets were used for training and testing the model.
-
-### Dataset 1 — Face Mask Dataset
-
-* Total images: 7553
-* With mask: 3725
-* Without mask: 3828
-
-Dataset Link:
-
-```text id="u8m3pl"
+```text id="k7m2pl"
 https://www.kaggle.com/datasets/omkargurav/face-mask-dataset
 ```
 
-### Dataset 2 — Face Data for Mask Classification
-
-Includes:
-
-* Correct mask
-* Incorrect mask
-* No mask
-* Real-world variations
-* Different lighting conditions
-* Hands or objects covering faces
-
-Dataset Link:
-
-```text id="r5x1qw"
+```text id="u4x9qw"
 https://www.kaggle.com/datasets/adsawe/face-data-for-mask-classification/data
 ```
 
@@ -82,7 +59,7 @@ https://www.kaggle.com/datasets/adsawe/face-data-for-mask-classification/data
 
 ## Project Structure
 
-```bash id="t9n4vk"
+```bash id="p8r1vn"
 Face-Mask-Detection-Using-Deep-Learning/
 │
 ├── README.md
@@ -95,11 +72,6 @@ Face-Mask-Detection-Using-Deep-Learning/
 ├── mask_detector.model
 ├── haarcascade_frontalface_default.xml
 ├── requirements.txt
-│
-├── dataset/
-│   ├── with_mask/
-│   ├── without_mask/
-│   └── additional_data/
 │
 ├── static/
 │
@@ -116,7 +88,7 @@ Face-Mask-Detection-Using-Deep-Learning/
 
 2. Install required libraries:
 
-```bash id="c2v7mn"
+```bash id="m3v8kt"
 pip install tensorflow opencv-python numpy matplotlib
 ```
 
@@ -124,7 +96,7 @@ pip install tensorflow opencv-python numpy matplotlib
 
 4. Run the detection system:
 
-```bash id="k8r1ql"
+```bash id="t6q2wl"
 python detect_mask.py
 ```
 
@@ -159,13 +131,14 @@ in real time.
 
 ### Final Improvements
 
-Additional images were added for:
+Additional real-world images were added for:
 
 * Incorrect mask usage
 * Hands covering faces
+* Different lighting conditions
 * Real-world edge cases
 
-This improved real-time prediction reliability.
+This improved prediction reliability and real-time performance.
 
 ---
 
@@ -174,7 +147,6 @@ This improved real-time prediction reliability.
 * Face detection accuracy
 * Real-world lighting variations
 * Hand/object misclassification
-* Dataset diversity limitations
 * Real-time optimization
 
 ---
@@ -185,7 +157,6 @@ This improved real-time prediction reliability.
 * Mobile application integration
 * Better UI/UX
 * Multi-face tracking
-* Medical safety analytics
 * Performance optimization
 
 ---
