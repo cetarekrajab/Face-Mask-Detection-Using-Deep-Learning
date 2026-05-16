@@ -64,15 +64,12 @@ Face-Mask-Detection-Using-Deep-Learning/
 ├── LICENSE
 ├── .gitignore
 │
-├── app.py
+├── face_detection.py
 ├── train1.py
 ├── train2.py
 ├── train3.py
 │
 ├── models/
-│   ├── cnn_model.h5
-│   ├── mobilenetv2_model.h5
-│   └── improved_model.h5
 │
 ├── report/
 │   └── Face_Mask_Detection_Report.pdf
